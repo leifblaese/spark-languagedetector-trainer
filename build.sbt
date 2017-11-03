@@ -19,5 +19,6 @@ lazy val common = Project("spark-languagedetector-trainer", file("."))
     scalaVersion := "2.11.11",
     organization := "lbl",
     libraryDependencies ++= libDeps,
-    Defaults.itSettings
+    Defaults.itSettings,
+    assemblyJarName in assembly := "spark-languagedetector-trainer.jar"
   )

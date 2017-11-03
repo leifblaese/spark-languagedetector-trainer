@@ -7,8 +7,7 @@ object Spark {
 
   lazy val conf: SparkConf = new SparkConf()
     .setAppName("langDetect")
-    .setMaster("local[4]")
-    .set("spark.cores.max", "4")
+
 
 
   lazy val session: SparkSession = SparkSession
